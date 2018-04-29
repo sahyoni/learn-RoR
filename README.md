@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+this project i made it to document some RoR code by comments because i found it a better way to remember and learn.
 
-Things you may want to cover:
+Things i have used :
 
-* Ruby version
+* Ruby
 
-* System dependencies
+* Ruby on Rails
 
-* Configuration
+* Bootstrap
 
-* Database creation
+* Mysql
 
-* Database initialization
+* Rails scaffold
 
-* How to run the test suite
+* Rails generate
 
-* Services (job queues, cache servers, search engines, etc.)
+* MVC concept
 
-* Deployment instructions
+* HTML
 
-* ...
+P.S: this project still in the basic style but i'm sure that i will add a better style when i have time.
