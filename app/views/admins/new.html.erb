@@ -1,0 +1,9 @@
+<h1>Admins#new</h1>
+<p>Find me in app/views/admins/new.html.erb</p>
+
+<h1> Add new admin </h1>
+
+<%= render 'form' , admin: @admin %> <!-- that means i will recive some thing from the controller called '@admin' then i will set it to a 'var admin:' then pass the form 
+in this line every thing we make or design in the form page we will show it here
+-->
+<%= link_to 'Back' ,admins_path %> <!-- admins_path means go back home -->

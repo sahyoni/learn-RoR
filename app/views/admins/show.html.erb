@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p> <!-- here we will display a msg if the admin created successfully -->
+<h1>Admins#show</h1>
+<p>Find me in app/views/admins/show.html.erb</p>
+
+
+<p>
+	<strong>first name</strong>
+	<%= @admin.first_name %>
+</p>
+
+<p>
+	<strong>last name</strong>
+	<%= @admin.last_name %>
+</p>
+
+<p>
+	<strong>age</strong>
+	<%= @admin.age %>
+</p>
+
+<p>
+	<strong>salary</strong>
+	<%= @admin.salary %>
+</p>
+
+<p>
+	<strong>DOB</strong>
+	<%= @admin.DOB %>
+</p>
+
+<%= link_to 'Edit', edit_admin_path(@admin) %> |
+<%= link_to 'Back', admins_path %>

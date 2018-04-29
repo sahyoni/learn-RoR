@@ -1,0 +1,15 @@
+<h1>Learning#index</h1>
+
+
+<%
+(1..12).each do |i| 
+	%>
+	<%= "num is #{i}" %>
+	<%
+end
+%>
+<%= @arr.collect do |n| %>
+<% "#{n}m" %>
+<%end%>
+</br>
+<%=link_to("home page",{:action=>"home"})%>

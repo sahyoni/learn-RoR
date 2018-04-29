@@ -1,0 +1,53 @@
+<!-- partial page thats why we start the name with '_' 
+form represent the (post) process 'if we want to add some thing on the browser'
+wen we click on link this process called (get)
+-->
+
+<%= form_for(admin) do |f| %> <!-- this means i will creat a window to this admin instance and represent this window by 'f' now through this 'f' i can creat many things -->
+
+<% if admin.errors.any? %> <!-- to get errors message -->
+    <div id="error_explanation">
+      <h2><%= pluralize(admin.errors.count, "error") %> prohibited this admin from being saved:</h2>
+
+      <ul>
+      <% admin.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<div class="field"> <!-- class="field" contain label and input -->
+	<%= f.label :first_name %>
+	<%= f.text_field :first_name %> <!-- here the names like 'first_name' should be the same as ours in database -->	
+</div>
+
+<div class="field"> 
+	<%= f.label :last_name %>
+	<%= f.text_field :last_name %>
+</div>
+
+<div class="field"> 
+	<%= f.label :age %>
+	<%= f.number_field :age %>
+</div>
+
+<div class="field"> 
+	<%= f.label :salary %>
+	<%= f.text_field :salary %>
+</div>
+
+<div class="field"> 
+	<%= f.label :DOB %>
+	<%= f.text_field :DOB %>
+</div>
+
+<div class="actions">
+	<%= f.submit class:"btn btn-success" %>
+</div>
+
+
+<% end %>
+
+<!-- we have also password_field  text_area  hidden_field  radio_button  check_box  file_field  label  text_field -->

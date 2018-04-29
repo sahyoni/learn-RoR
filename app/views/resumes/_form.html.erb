@@ -1,0 +1,27 @@
+<%= form_with(model: resume, local: true) do |form| %>
+  <% if resume.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(resume.errors.count, "error") %> prohibited this resume from being saved:</h2>
+
+      <ul>
+      <% resume.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :cover_letter %>
+    <%= form.text_area :cover_letter, id: :resume_cover_letter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.file_field :title, id: :resume_title %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
